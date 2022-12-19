@@ -1,0 +1,217 @@
+* {
+    font: inherit;
+    font-size: 1.1em;
+}
+
+.page {
+    /* shift everything down */
+    margin-top: 100px;
+}
+
+body {
+    background-color: #5CDB95;
+    font-family: "VT323", Helvetica, Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Press Start 2P", cursive;
+    color: #EDF5E1;
+    font-size: 60px;
+    font-weight: 600;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+button {
+    display: inline-block;
+    border-radius: 3px;
+    padding: 0.5rem 0;
+    margin-left: 10px;
+    width: 11rem;
+    background: transparent;
+    border: 2px solid #05486B;
+    background-color: #05486B;
+    color: #EDF5E1;
+    box-shadow: 1px 1px 0.2px #aaaaaa;
+}
+
+
+.clear-completed {
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    width: 200px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+#task {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid #EDF5E1;
+    border-radius: 4px;
+}
+
+#todo-list {
+    width: 500px;
+    color: #05486B;
+}
+
+
+#todo-list li {
+
+    list-style: none;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #379683;
+    width: 90%;
+}
+
+#todo-list li input[type="checkbox"], li label {
+    display: inline-block
+}
+
+
+.container {
+    border: 1px solid #8EE4AF;
+    margin: auto;
+    width: 30%;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    align-items: center;
+}
+
+input {
+    font: inherit;
+    box-shadow: 1px 1px 0.2px #aaaaaa;
+}
+
+button:hover {
+    background-color: #379683;
+    cursor: pointer;
+
+}
+
+/* DESIGN ELEMENTS */
+
+.glitch h1 {
+    animation: glitch 1s infinite;
+}
+
+@keyframes glitch {
+    50% {
+        color: #cc0f39;
+    }
+}
+
+.loading-icon {
+    animation: spin 1s infinite linear;
+    border: 2px solid black;
+    border-radius: 50%;
+    border-top: 2px solid transparent;
+    width: 10px;
+    height: 10px;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #05486B;
+    display: flex;
+    flex-direction: column;
+    /* Add this line to stack the elements vertically */
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    /* Add this line to make the progress bar appear on top of other elements */
+}
+
+#loading-text {
+    color: #333;
+    font-size: 70px;
+    text-align: center;
+    /* Add this line to center the text */
+}
+
+#bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* Add this line to distribute the blocks evenly */
+    width: 400px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin: 7px 0;
+}
+
+.block {
+    width: 40px;
+    height: 40px;
+    background-color: #00FF00;
+    border-radius: 10px;
+    margin: 0 1px;
+    visibility: hidden;
+    /* Add this line to hide the blocks by default */
+}
+
+#marquee {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    font-family: "VT323", monospace;
+    font-size: 36px;
+    color: #5CDB95;
+    background-color: #05486B;
+}
+
+#footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    line-height: 50px;
+    font-family: "VT323", monospace;
+    font-size: 22px;
+    color: #fff;
+    background-color: #05486B;
+    text-align: center;
+    margin-top: 400px;
+}
+
+.heart {
+    color: #cc0f39;
+}

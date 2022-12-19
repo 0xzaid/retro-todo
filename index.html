@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retro ToDo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Press+Start+2P">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=VT323">
+</head>
+
+<body>
+    <marquee id="marquee" direction="left" scrollamount="20">Welcome to the Retro ToDo List!</marquee>
+
+
+    <div id="loading">
+        <div id="loading-text">LOADING...</div>
+        <div id="bar">
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+            <div class="block"></div>
+        </div>
+    </div>
+
+
+    <div class="page">
+        <div class="glitch">
+            <h1>Retro ToDo</h1>
+        </div>
+        <div class="container">
+            <form id="form">
+                <input type="text" id="task" placeholder="Add a new todo item">
+                <button id="add" class="add" type="submit">Add</button>
+            </form>
+        </div>
+        <div class="container">
+            <ul id="todo-list"></ul>
+
+            <button class="clear-completed" id="clear-completed">Clear completed</button>
+        </div>
+        <script src="script.js"></script>
+
+
+        <footer id="footer">
+            Made with <span class="heart">❤</span> by <a target="_blank" href="https://www.github.com/0xzaid">0xzaid</a>
+        </footer>
+    </div>
+</body>
+
+</html>
