@@ -112,6 +112,10 @@ button:hover {
 
 }
 
+a:visited {
+    color: #379683;
+}
+
 /* DESIGN ELEMENTS */
 
 .glitch h1 {
